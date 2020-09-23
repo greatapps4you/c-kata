@@ -6,6 +6,6 @@
 #define INCARRAY_INCREMENT_NUMBERS_ARRAY_H
 
 #include <stdio.h>
-void increment_array(int array[], int i);
+int *increment_array(int *input, const int initial_size) ;
 
 #endif //INCARRAY_INCREMENT_NUMBERS_ARRAY_H
