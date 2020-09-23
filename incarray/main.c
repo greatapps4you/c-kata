@@ -4,7 +4,7 @@
 int main() {
 
     const int INITIAL_SIZE = 3;
-    int array[INITIAL_SIZE] = {1,2,3};
+    int array[3] = {1,2,3};
 
     increment_array(array, INITIAL_SIZE);
     return 0;
