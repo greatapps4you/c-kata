@@ -4,11 +4,14 @@
 
 #include "increment_numbers_array.h"
 
-int *increment_array(int *input, const int initial_size) {
-    int current_index = initial_size - 1;
-    while(current_index >= 0) {
+int *increment_array(int *input) {
+    int current_index = LAST_DIGIT;
+    while(current_index >=  0 ) {
         input[current_index] = input[current_index] + 1;
         current_index--;
+        if(input[current_index] == 0) {
+            break;
+        }
     }
     //Arrays are ALWAYS passed by reference in C
     return input;

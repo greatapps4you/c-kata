@@ -4,8 +4,12 @@
 
 #ifndef INCARRAY_INCREMENT_NUMBERS_ARRAY_H
 #define INCARRAY_INCREMENT_NUMBERS_ARRAY_H
+#define MAX_NUMBER_LENGTH 16
+#define LAST_DIGIT 15
+#define FIRST_DIGIT 0
 
 #include <stdio.h>
-int *increment_array(int *input, const int initial_size) ;
+
+int *increment_array(int *input);
 
 #endif //INCARRAY_INCREMENT_NUMBERS_ARRAY_H
