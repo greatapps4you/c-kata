@@ -1,11 +1,11 @@
 #include "main.h"
 #include "increment_numbers_array.h"
 
-void zero_input(int input[]);
+void zero_init_input(int *input);
 
 int main() {
     int input[MAX_NUMBER_LENGTH];
-    zero_input(input);
+    zero_init_input(input);
 
     int current_index = LAST_DIGIT;
     input[LAST_DIGIT] = 3;
@@ -22,7 +22,7 @@ int main() {
     return 0;
 }
 
-void zero_input(int input[]) {
+void zero_init_input(int *input) {
     int i = 0;
     for(i = LAST_DIGIT; i >= 0; i--){
         input[i] = 0;

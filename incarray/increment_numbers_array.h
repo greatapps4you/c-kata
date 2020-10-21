@@ -10,6 +10,6 @@
 
 #include <stdio.h>
 
-int *increment_array(int *input);
+void increment_array(int *input);
 
 #endif //INCARRAY_INCREMENT_NUMBERS_ARRAY_H
